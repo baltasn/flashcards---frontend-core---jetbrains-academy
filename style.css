@@ -52,12 +52,17 @@ body {
   padding: .5rem 2.5rem;
 }
 
-.card-container {
+.cards-container {
   display: grid;
   gap: 1rem;
   grid-template-columns: auto auto auto;
   margin: 0 8rem 8rem;
 }
+
+.card-container {
+  perspective: 1500px ;
+}
+
 .card {
   display: flex;
   position: relative;
@@ -102,6 +107,3 @@ body {
   padding: 1rem;
 }
 
-.card-container {
-  perspective: 1500px ;
-}
