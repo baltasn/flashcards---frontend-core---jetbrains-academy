@@ -59,19 +59,49 @@ body {
   margin: 0 8rem 8rem;
 }
 .card {
-  background-color: #495464 ;
   display: flex;
-  flex-wrap: wrap;
-  text-align : center;
-  justify-content: center;
-  align-content: center;
+  position: relative;
   width: 15rem;
   height: 15rem;
-  border-radius: .5rem;
+  transition: all 1s linear;
+  transform-style: preserve-3d;
 }
 
-.card p {
+.card:hover {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.card__front,
+.card__back {
+  height: 100%;
+  width: 100%;
+  border-radius: .5rem;
+  text-align : center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.card__front {
+  background-color: #495464 ;
   color: #BBBFCA;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+
+.card__back {
+  background-color: #BBBFCA;
+  color: #495464;
+  position: absolute;
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+.card p {
   font-size: 1.5rem;
   padding: 1rem;
+}
+
+.card-container {
+  perspective: 1500px ;
 }
