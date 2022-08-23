@@ -1,0 +1,77 @@
+/*#F4F4F2*/
+/*#E8E8E8*/
+/*#BBBFCA*/
+/*#495464*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url("https://stepik.org/media/attachments/lesson/374893/world.png");
+  background-repeat: no-repeat;
+  background-color: #495464;
+  height: 100%;
+  width: 100%;
+  font-family: Century Gothic, Arial, sans-serif;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-block {
+  background-color: rgba(244, 244, 242, 0.3);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quiz-title {
+  background-color: #495464;
+  border-radius: .5rem;
+  margin: 3rem 15rem;
+
+}
+
+.quiz-title__text {
+  color: #BBBFCA;
+  font-weight: normal;
+  padding: .5rem 2.5rem;
+}
+
+.card-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto auto auto;
+  margin: 0 8rem 8rem;
+}
+.card {
+  background-color: #495464 ;
+  display: flex;
+  flex-wrap: wrap;
+  text-align : center;
+  justify-content: center;
+  align-content: center;
+  width: 15rem;
+  height: 15rem;
+  border-radius: .5rem;
+}
+
+.card p {
+  color: #BBBFCA;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
